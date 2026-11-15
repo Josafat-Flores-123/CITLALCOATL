@@ -1,0 +1,84 @@
+{
+  "status": "draft: demonstration values, validate with NASA HRP sources and a physician",
+  "base_actions": {
+    "green": [
+      "Continue scheduled mission timeline",
+      "Maintain electrolyte hydration protocol",
+      "Complete prescribed daily cycle ergometer / ARED countermeasure session"
+    ],
+    "yellow": [
+      "Pause high-intensity physical exertion",
+      "Perform 5-minute guided diaphragmatic breathing protocol",
+      "Verify cabin life support parameters (CO2, total pressure, O2 fraction)",
+      "Remain in neutral body posture and schedule re-measurement in 20 minutes"
+    ],
+    "red": [
+      "Cease all operational activity immediately",
+      "Broadcast medical alert to crew and mission control",
+      "Don emergency mask with 100% O2 supply",
+      "Continuous vital monitoring and mandatory re-measurement in 5 minutes"
+    ]
+  },
+  "environment_actions": {
+    "eva": {
+      "yellow": [
+        "Reduce metabolic workload and pace in suit",
+        "Notify EVA partner of elevated exertion heart rate",
+        "Monitor suit telemetry (CO2 levels and PLSS O2 consumption)",
+        "Re-measure in 20 minutes before resuming critical tasks"
+      ],
+      "red": [
+        "Abort extravehicular activity immediately",
+        "Broadcast critical contingency to airlock and EVA partner",
+        "Verify suit pressure integrity (4.3 psi) and continuous O2 delivery",
+        "Initiate assisted ingress to airlock"
+      ]
+    },
+    "habitat": {
+      "yellow": [
+        "Pause habitat surface operations and inspect life support system",
+        "Log symptoms locally (accounting for Earth transmission latency)",
+        "Rest and consume electrolyte hydration",
+        "Re-measure in 20 minutes"
+      ],
+      "red": [
+        "Activate autonomous local medical contingency protocol",
+        "Transmit high-priority telemetry packet to Earth",
+        "Administer supplementary oxygen from habitat medical rack",
+        "Onboard medical officer assumes direct intervention"
+      ]
+    }
+  },
+  "cause_actions": {
+    "hypoxia": [
+      "Immediately check ambient O2 concentration and cabin/suit pressure",
+      "If in cabin, don 100% O2 mask",
+      "If in EVA, verify PLSS O2 flow and initiate airlock ingress"
+    ],
+    "eva_strain": [
+      "Immediately halt translation or tool operations",
+      "Adopt neutral rest posture inside spacesuit",
+      "Increase liquid cooling garment (LCG) flow if hyperthermic"
+    ],
+    "fluid_shift": [
+      "Maintain neutral posture to facilitate fluid redistribution",
+      "Avoid Valsalva maneuvers or repeated head flexion",
+      "Monitor visual acuity and document headache progression"
+    ],
+    "orthostatic_intolerance": [
+      "Assume supine posture or elevate lower extremities",
+      "Administer oral isotonic saline rehydration",
+      "Engage lower-body compression garments if available"
+    ],
+    "hyperthermia_fever": [
+      "Suspend physical exertion and remove excess thermal layers",
+      "Maintain active hydration",
+      "Re-evaluate core temperature in 20 minutes and consider antipyretic protocol"
+    ],
+    "reactive_hypertension": [
+      "Rest quietly for 15 minutes in neutral microgravity posture",
+      "Avoid stimulant intake and reduce acoustic stress in cabin",
+      "Re-measure blood pressure in 20 minutes"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "status": "draft: demonstration values, validate with NASA HRP sources and a physician",
+  "severity_levels": ["none", "mild", "moderate", "severe"],
+  "groups": {
+    "respiratory": {
+      "label": "Respiratory symptoms",
+      "items": [
+        {"id": "dyspnea_rest", "label": "Shortness of breath at rest"},
+        {"id": "dyspnea_exertion", "label": "Exertional dyspnea"},
+        {"id": "suffocation", "label": "Sensation of suffocation or air hunger"}
+      ]
+    },
+    "neurological_visual": {
+      "label": "Neurological and visual symptoms",
+      "items": [
+        {"id": "frontal_headache", "label": "Frontal headache or facial congestion"},
+        {"id": "vestibular_dizziness", "label": "Vestibular dizziness or space motion sickness"},
+        {"id": "tunnel_vision", "label": "Tunnel vision or visual field loss"},
+        {"id": "disorientation", "label": "Spatial disorientation or cognitive slowing"}
+      ]
+    },
+    "cardiovascular": {
+      "label": "Cardiovascular symptoms",
+      "items": [
+        {"id": "chest_pain", "label": "Chest pain or tightness"},
+        {"id": "palpitations", "label": "Palpitations or irregular/rapid heartbeat"},
+        {"id": "presyncope", "label": "Pre-syncope or sudden postural weakness"}
+      ]
+    }
+  }
+}

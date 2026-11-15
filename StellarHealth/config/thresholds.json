@@ -1,0 +1,84 @@
+{
+  "status": "draft: demonstration values, validate with NASA HRP sources and a physician",
+  "biological_limits": {
+    "spo2": {"min": 50, "max": 100},
+    "heart_rate": {"min": 20, "max": 250},
+    "systolic": {"min": 60, "max": 260},
+    "diastolic": {"min": 30, "max": 150},
+    "resp_rate": {"min": 4, "max": 60},
+    "temperature": {"min": 33.0, "max": 42.0},
+    "signal_quality_min": 0.6
+  },
+  "next_measurement_minutes": {
+    "green": 180,
+    "yellow": 20,
+    "red": 5
+  },
+  "base_thresholds": {
+    "spo2": {
+      "green": [95, 100],
+      "yellow": [90, 94],
+      "red_low": 90
+    },
+    "heart_rate": {
+      "green": [48, 100],
+      "yellow_low": [40, 47],
+      "yellow_high": [101, 115],
+      "red_low": 40,
+      "red_high": 115
+    },
+    "systolic": {
+      "green": [95, 135],
+      "yellow_low": [85, 94],
+      "yellow_high": [136, 155],
+      "red_low": 85,
+      "red_high": 155
+    },
+    "diastolic": {
+      "green": [60, 88],
+      "yellow_low": [50, 59],
+      "yellow_high": [89, 98],
+      "red_low": 50,
+      "red_high": 98
+    },
+    "resp_rate": {
+      "green": [11, 20],
+      "yellow_low": [9, 10],
+      "yellow_high": [21, 25],
+      "red_low": 9,
+      "red_high": 25
+    },
+    "temperature": {
+      "green": [36.0, 37.5],
+      "yellow_low": [35.5, 35.9],
+      "yellow_high": [37.6, 38.3],
+      "red_low": 35.5,
+      "red_high": 38.3
+    }
+  },
+  "environment_adjustments": {
+    "altitude": {
+      "spo2": {
+        "green": [90, 100],
+        "yellow": [85, 89],
+        "red_low": 85
+      }
+    },
+    "eva": {
+      "fc_max_pct": {
+        "green_max": 80.0,
+        "yellow_max": 90.0
+      },
+      "resp_rate": {
+        "green": [11, 30],
+        "yellow": [31, 35],
+        "red_high": 35
+      },
+      "systolic": {
+        "green": [95, 190],
+        "yellow": [191, 210],
+        "red_high": 210
+      }
+    }
+  }
+}

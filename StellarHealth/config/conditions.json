@@ -1,0 +1,48 @@
+{
+  "status": "draft: demonstration values, validate with NASA HRP sources and a physician",
+  "causes": [
+    {
+      "id": "hypoxia",
+      "label": "Hypoxia or asphyxia risk from depressurization / O2 supply failure",
+      "description": "Peripheral oxygen saturation drop compromising cellular and tissue oxygenation.",
+      "criterion": "SpO2 below normal threshold (< 95%, or < 90% at altitude), or reported dyspnea at rest / suffocation.",
+      "action_key": "hypoxia"
+    },
+    {
+      "id": "eva_strain",
+      "label": "Cardiovascular strain and metabolic fatigue during EVA",
+      "description": "Disproportionate cardiac exertion relative to maximal physical capacity in the spacesuit.",
+      "criterion": "EVA environment with heart rate exceeding 80% of estimated HR max (208 - 0.7 * age) or respiratory rate > 30 bpm.",
+      "action_key": "eva_strain"
+    },
+    {
+      "id": "fluid_shift",
+      "label": "Cephalad fluid shift (Space adaptation syndrome)",
+      "description": "Rostral migration of 1.5–2 L of blood and interstitial fluid due to loss of the hydrostatic gradient in early microgravity.",
+      "criterion": "Days 1–3 of microgravity exposure with reported frontal headache or facial congestion (not linked to arterial hypertension).",
+      "clinical_note": "Validate with NASA HRP sources: physiological fluid shift affects ~80% of crew in early flight days.",
+      "action_key": "fluid_shift"
+    },
+    {
+      "id": "orthostatic_intolerance",
+      "label": "Orthostatic intolerance from spaceflight hypovolemia",
+      "description": "Cardiovascular maladaptation with perfusion pressure drop on positional or gravitational stress.",
+      "criterion": "Systolic BP < 95 mmHg or diastolic BP < 60 mmHg with compensatory tachycardia or pre-syncope symptoms.",
+      "action_key": "orthostatic_intolerance"
+    },
+    {
+      "id": "hyperthermia_fever",
+      "label": "Hyperthermia or active infectious process",
+      "description": "Core body temperature elevation from environmental heat accumulation or pyrogenic response.",
+      "criterion": "Core temperature > 37.5 C at rest or > 38.3 C (critical range).",
+      "action_key": "hyperthermia_fever"
+    },
+    {
+      "id": "reactive_hypertension",
+      "label": "Reactive blood pressure elevation or hemodynamic overload",
+      "description": "Hyperreactive vascular response associated with mission stress, fluid overload, or vasoconstriction.",
+      "criterion": "Systolic BP >= 136 mmHg or diastolic BP >= 89 mmHg at rest.",
+      "action_key": "reactive_hypertension"
+    }
+  ]
+}
